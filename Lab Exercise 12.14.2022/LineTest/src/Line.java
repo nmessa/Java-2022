@@ -16,74 +16,41 @@ public class Line {
 	
 	//Point-slope constructor
     public Line(double x, double y, double m) {
-    	slope = m;
-    	intercept = -slope*x + y;
-    	infiniteSlope = false;
+    	//Add code here
+    	
     }
     
     //Two point constructor
     public Line(double x1, double y1, double x2, double y2) {
-    	slope = (y2-y1)/(x2-x1);
-    	intercept = -slope*x1 + y1;
-    	infiniteSlope = false;
+    	//Add code here
+    	
     }
     
     //slope-intercept constructor
     public Line(double m, double i) {
-    	slope = m;
-    	intercept = i;
-    	infiniteSlope = false;
+    	//Add code here
+    	
     }
     
     //vertical line constructor
     public Line(double a) {
-    	infiniteSlope = true;
-    	x = a;
+    	//Add code here
+    	
     }
     
     public boolean intersects(Line other){
-    	if (infiniteSlope ||other.infiniteSlope)
-    	{
-    		if (infiniteSlope == other.infiniteSlope)
-    			return false;
-    		else
-    			return true;
-    	}
-   
-    	if (slope != other.slope)
-    		return true;
-    	else
-    		return false;
+    	//Add code here
+    	
     }
     
     public boolean equals(Line other){
-    	if (infiniteSlope || other.infiniteSlope)
-    	{
-    		if (infiniteSlope == other.infiniteSlope && x == other.x)
-    			return true;
-    		else
-    			return false;
-    	}
+    	//Add code here
     	
-    	if (slope == other.slope && intercept == other.intercept)
-    		return true;
-    	else
-    		return false;
     }
     
     public boolean isParallel(Line other){
-    	if (infiniteSlope || other.infiniteSlope)
-    	{
-    		if (infiniteSlope == other.infiniteSlope)
-    			return true;
-    		else
-    			return false;
-    	}
-    		
-    	if (slope == other.slope)
-    		return true;
-    	else
-    		return false;
+    	//Add code here
+    	
     }
     
 }
